@@ -1,5 +1,5 @@
 {% set name = "minorminer" %}
-{% set version = "0.2.7.post0" %}
+{% set version = "0.2.8.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/minorminer-{{ version }}.tar.gz
-  sha256: 95f71ed9d87e22a25c78b052b0b361153fe89d9bc1f3c1d445d6c90aaa1fcf41
+  sha256: 66fb007f688c53a659ccae9b4b0a2b3c6b87853fe66de6b037562f87aa17a01b
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   build:
