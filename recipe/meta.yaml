@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/minorminer-{{ version }}.tar.gz
-  sha256: 392dd329a60a5e12d169718306d0ff33e180463063c773cde5f05e456db80ccf
+  url: https://github.com/dwavesystems/minorminer/archive/refs/tags/{{ version }}.tar.gz
+  sha256: d74e9c8345094c9dae4c1c6421557e4fdb81b3efce00c0b8b0459e3db09f5083
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
