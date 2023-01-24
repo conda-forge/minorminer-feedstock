@@ -1,5 +1,5 @@
 {% set name = "minorminer" %}
-{% set version = "0.2.10" %}
+{% set version = "0.2.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dwavesystems/minorminer/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 83c4a739d4dd3b87b223581801545546a41aec15315e223b55e994371361ec34
+  sha256: 3b25b32f863feb9d3d4f8fbcb0e93f174acfb60eb6e02b8f015509491c482576
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
