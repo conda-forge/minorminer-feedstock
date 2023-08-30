@@ -1,11 +1,11 @@
-About minorminer
-================
+About minorminer-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/minorminer-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dwavesystems/minorminer
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/minorminer-feedstock/blob/main/LICENSE.txt)
 
 Summary: heuristic algorithm to find graph minor embeddings
 
