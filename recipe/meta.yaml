@@ -1,5 +1,5 @@
 {% set name = "minorminer" %}
-{% set version = "0.2.10" %}
+{% set version = "0.2.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dwavesystems/minorminer/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 83c4a739d4dd3b87b223581801545546a41aec15315e223b55e994371361ec34
+  sha256: 61420a7f467c268dbf9dde109c5ec89219af0ddd35bd26aa457c42403ec119f7
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -28,13 +28,13 @@ requirements:
     - wheel
   run:
     - dwave-networkx >=0.8.10
-    - fasteners
-    - homebase
-    - networkx
-    - numpy
+    - fasteners >=0.15
+    - homebase >=1.0.1
+    - networkx >=2.4
+    - numpy >=1.21.6
     - python
     - rectangle-packer >=2.0.1
-    - scipy
+    - scipy >=1.7.3
 
 test:
   imports:
